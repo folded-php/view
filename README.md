@@ -2,6 +2,8 @@
 
 View utilities for your PHP web app.
 
+[![Build Status](https://travis-ci.com/folded-php/view.svg?branch=master)](https://travis-ci.com/folded-php/view) [![Maintainability](https://api.codeclimate.com/v1/badges/c3484b0de6fe6db59f18/maintainability)](https://codeclimate.com/github/folded-php/view/maintainability)
+
 ## Summary
 
 - [About](#about)
