@@ -2,7 +2,7 @@
 
 View utilities for your PHP web app.
 
-[![Build Status](https://travis-ci.com/folded-php/view.svg?branch=master)](https://travis-ci.com/folded-php/view) [![Maintainability](https://api.codeclimate.com/v1/badges/c3484b0de6fe6db59f18/maintainability)](https://codeclimate.com/github/folded-php/view/maintainability)
+[![Packagist License](https://img.shields.io/packagist/l/folded/view)](https://github.com/folded-php/view/blob/master/LICENSE) [![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/folded/view)](https://github.com/folded-php/view/blob/master/composer.json#L14) [![Packagist Version](https://img.shields.io/packagist/v/folded/view)](https://packagist.org/packages/folded/view) [![Build Status](https://travis-ci.com/folded-php/view.svg?branch=master)](https://travis-ci.com/folded-php/view) [![Maintainability](https://api.codeclimate.com/v1/badges/c3484b0de6fe6db59f18/maintainability)](https://codeclimate.com/github/folded-php/view/maintainability)
 
 ## Summary
 
