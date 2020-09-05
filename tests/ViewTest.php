@@ -38,12 +38,12 @@ it("should render blade views", function (): void {
     View::setFolderPath(__DIR__ . "/misc/views");
     View::setCacheFolderPath(__DIR__ . "/misc/cache/views");
 
-    expect(View::render("view"))->toBe("hello world\r\n");
+    expect(View::render("view"))->toBe("hello world\n");
 });
 
 it("should render plain PHP views", function (): void {
     View::setFolderPath(__DIR__ . "/misc/views");
     View::setCacheFolderPath(__DIR__ . "/misc/cache/views");
 
-    expect(View::render("plain-view"))->toBe("hello world\r\n");
+    expect(View::render("plain-view"))->toBe("hello world\n");
 });
