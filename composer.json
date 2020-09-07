@@ -12,7 +12,8 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.4.0",
-        "illuminate/view": "7.*"
+        "illuminate/view": "7.*",
+        "folded/exception": "0.1.*"
     },
     "scripts": {
         "test": "pest --coverage",

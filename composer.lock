@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "26c433a9a55961223ccb629e17d1e357",
+    "content-hash": "2f9da750ca62b9028373cb53f7c85286",
     "packages": [
         {
             "name": "composer/semver",
@@ -485,6 +485,47 @@
                 "whoops"
             ],
             "time": "2020-06-14T09:00:00+00:00"
+        },
+        {
+            "name": "folded/exception",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/folded-php/exception.git",
+                "reference": "5e61ee7cf27bdf4e35329aec3bfa4d8ae7ce3612"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/folded-php/exception/zipball/5e61ee7cf27bdf4e35329aec3bfa4d8ae7ce3612",
+                "reference": "5e61ee7cf27bdf4e35329aec3bfa4d8ae7ce3612",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "2.*",
+                "pestphp/pest": "0.3.*",
+                "phpunit/phpunit": "9.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Folded\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Khalyomede",
+                    "email": "khalyomede@gmail.com"
+                }
+            ],
+            "description": "Various kind of exception to throw for your web app.",
+            "time": "2020-09-06T20:46:52+00:00"
         },
         {
             "name": "friendsofphp/php-cs-fixer",

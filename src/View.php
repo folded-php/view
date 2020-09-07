@@ -146,11 +146,11 @@ class View
     private static function checkFolder(string $path): void
     {
         if (!file_exists($path)) {
-            throw new FolderNotFoundException("folder $path not found");
+            throw (new FolderNotFoundException("folder $path not found"))->setFolder($path);
         }
 
         if (!is_dir($path)) {
-            throw new NotAFolderException("$path is not a folder");
+            throw (new NotAFolderException("$path is not a folder"))->setFolder($path);
         }
     }
 

@@ -12,10 +12,30 @@ it("should throw an exception if the folder is not found", function (): void {
     View::setFolderPath(__DIR__ . "/misc/not-found");
 });
 
+it("should set the folder in the exception if the folder is not found", function (): void {
+    $folder = __DIR__ . "/misc/not-found";
+
+    try {
+        View::setFolderPath(__DIR__ . "/misc/not-found");
+    } catch (FolderNotFoundException $exception) {
+        expect($exception->getFolder())->toBe($folder);
+    }
+});
+
 it("should throw an exception if the path is not a folder", function (): void {
     $this->expectException(NotAFolderException::class);
 
     View::setFolderPath(__DIR__ . "/misc/views/view.blade.php");
+});
+
+it("should set the folder in the exception if the path is not a folder", function (): void {
+    $folder = __DIR__ . "/misc/views/view.blade.php";
+
+    try {
+        View::setFolderPath($folder);
+    } catch (NotAFolderException $exception) {
+        expect($exception->getFolder())->toBe($folder);
+    }
 });
 
 it("should set the folder path", function (): void {
