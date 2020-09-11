@@ -123,3 +123,4 @@ The plain PHP view is located at `views/about-us/index.php` (notice there is no 
 | ------ | --- | --- | --- |
 | v0.1.0 | ❌  | ✔️  | ❓  |
 | v0.1.1 | ❌  | ✔️  | ❓  |
+| v0.1.2 | ❌  | ✔️  | ❓  |
