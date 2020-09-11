@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 use Folded\Exceptions\FolderNotFoundException;
 use Folded\Exceptions\NotAFolderException;
-use Foled\View;
+use Folded\View;
 use function Folded\setViewFolderPath;
 
 it("should set the view folder path", function (): void {

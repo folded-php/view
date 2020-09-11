@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-use Foled\View;
+use Folded\View;
 use Folded\Exceptions\FolderNotFoundException;
 use Folded\Exceptions\NotAFolderException;
 

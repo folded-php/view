@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Foled;
+namespace Folded;
 
 use Folded\Exceptions\NotAFolderException;
 use Folded\Exceptions\FolderNotFoundException;
