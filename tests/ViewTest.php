@@ -67,3 +67,15 @@ it("should render plain PHP views", function (): void {
 
     expect(View::render("plain-view"))->toBe("hello world\n");
 });
+
+it("should render the view with pre-filled data", function (): void {
+    $viewPath = "view-with-data";
+
+    View::setFolderPath(__DIR__ . "/misc/views");
+    View::setCacheFolderPath(__DIR__ . "/misc/cache/views");
+    View::addData($viewPath, [
+        "companyName" => "Folded",
+    ]);
+
+    expect(View::render($viewPath))->toBe("Welcome to Folded.\n");
+});

@@ -45,6 +45,29 @@ class View
     private static string $folderPath = "";
 
     /**
+     * Always pass the data provided to a specific view when it is rendered.
+     *
+     * @param string $viewPath The path to the view (you can use dot syntax).
+     * @param array  $data     The data to pass to the view as key-value pairs.
+     *
+     * @since 0.2.0
+     *
+     * @example
+     * View::addData("layouts.base", [
+     *  "companyName" => "Folded",
+     *  "companySlogan" => "Constellation of packages for your web app.",
+     * ]);
+     */
+    public static function addData(string $viewPath, array $data): void
+    {
+        self::engine()->composer($viewPath, function ($view) use ($data): void {
+            foreach ($data as $key => $value) {
+                $view->with($key, $value);
+            }
+        });
+    }
+
+    /**
      * Get the cached views folder path.
      *
      * @since 0.1.0

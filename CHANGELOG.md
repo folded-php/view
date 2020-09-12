@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] 2020-09-12
+
+### Added
+
+- New method `Folded\addDataToView` to always add certain data to a specific view.
+
 ## [0.1.2] 2020-09-11
 
 ### Fixed

@@ -24,6 +24,7 @@
             "Folded\\": "src"
         },
         "files": [
+            "src/addDataToView.php",
             "src/displayView.php",
             "src/setViewCacheFolderPath.php",
             "src/setViewFolderPath.php"

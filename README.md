@@ -64,6 +64,7 @@ Since this library relies on Laravel's [illuminate/view](https://github.com/illu
 - [1. Display a view](#1-display-a-view)
 - [2. Pass data to your view](#2-pass-data-to-your-view)
 - [3. Display a plain PHP view](#3-display-a-plain-php-view)
+- [4. Always pass certain data to a view](#4-always-pass-certain-data-to-a-view)
 
 ### 1. Display a view
 
@@ -117,6 +118,18 @@ The plain PHP view is located at `views/about-us/index.php` (notice there is no 
 <h1>About us</h1>
 ```
 
+### 4. Always pass certain data to a view
+
+In this example, we will pass a company name to a layout view, to be able to not add it to every view that extends the layout.
+
+```php
+use function Folded\addDataToView;
+
+addDataToView("layouts.base", [
+  "companyName" => "Folded",
+]);
+```
+
 ## Version support
 
 |        | 7.3 | 7.4 | 8.0 |
@@ -124,3 +137,4 @@ The plain PHP view is located at `views/about-us/index.php` (notice there is no 
 | v0.1.0 | ❌  | ✔️  | ❓  |
 | v0.1.1 | ❌  | ✔️  | ❓  |
 | v0.1.2 | ❌  | ✔️  | ❓  |
+| v0.2.0 | ❌  | ✔️  | ❓  |
