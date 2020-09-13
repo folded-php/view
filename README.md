@@ -7,6 +7,7 @@ View utilities for your PHP web app.
 ## Summary
 
 - [About](#about)
+- [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Examples](#examples)
@@ -24,6 +25,13 @@ Folded is a constellation of packages to help you setting up a web app easily, u
 - [folded/orm](https://github.com/folded-php/orm): An ORM for you web app.
 - [folded/request](https://github.com/folded-php/request): Request utilities, including a request validator, for your PHP web app.
 - [folded/routing](https://github.com/folded-php/routing): Routing functions for your PHP web app.
+
+## Features
+
+- Can render Blade views, and pass data to it
+- Can render plain PHP views
+- Can add data to a specific views beforehand (handy if you always need some data in your layouts for example)
+- Eager load the view engine such as it is not booted until you call `displayView()`
 
 ## Requirements
 
