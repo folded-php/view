@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace Folded;
 
-if (!function_exists("setViewFolderPath")) {
+if (!function_exists("Folded\setViewFolderPath")) {
     /**
      * Set the folder path for the engine to find and compile views from.
      *
