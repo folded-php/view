@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace Folded;
 
-if (!function_exists("addDataToView")) {
+if (!function_exists("Folded\addDataToView")) {
     /**
      * Always pass the data provided to a specific view when it is rendered.
      *

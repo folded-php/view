@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace Folded;
 
-if (!function_exists("displayView")) {
+if (!function_exists("Folded\displayView")) {
     /**
      * Display the view by echoing its content.
      *

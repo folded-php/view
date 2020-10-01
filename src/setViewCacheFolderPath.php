@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace Folded;
 
-if (!function_exists("setViewCacheFolderPath")) {
+if (!function_exists("Folded\setViewCacheFolderPath")) {
     /**
      * Set the cached views folder path.
      *
