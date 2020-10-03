@@ -13,7 +13,7 @@
     "require": {
         "php": ">=7.4.0",
         "illuminate/view": "7.*",
-        "folded/exception": "0.3.*"
+        "folded/exception": "0.4.*"
     },
     "scripts": {
         "test": "pest --coverage",
