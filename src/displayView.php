@@ -8,6 +8,8 @@ if (!function_exists("Folded\displayView")) {
     /**
      * Display the view by echoing its content.
      *
+     * @param array<string,mixed> $data The data to pass to the view.
+     *
      * @since 0.1.0
      *
      * @example
