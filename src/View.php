@@ -21,7 +21,7 @@ use Illuminate\View\FileViewFinder;
  *
  * @since 0.1.0
  */
-class View
+final class View
 {
     /**
      * The path to the folder containing the cached (e.g. compiled) views.
@@ -187,14 +187,14 @@ class View
      */
     private static function engine(): Factory
     {
-        if (!(static::$engine instanceof Factory)) {
+        if (!(self::$engine instanceof Factory)) {
             // Dependencies
             $filesystem = new Filesystem();
             $eventDispatcher = new Dispatcher(new Container());
 
             // Create View Factory capable of rendering PHP and Blade templates
             $viewResolver = new EngineResolver();
-            $bladeCompiler = new BladeCompiler($filesystem, static::$cacheFolderPath);
+            $bladeCompiler = new BladeCompiler($filesystem, self::$cacheFolderPath);
 
             $viewResolver->register('blade', function () use ($bladeCompiler) {
                 return new CompilerEngine($bladeCompiler);
@@ -204,12 +204,12 @@ class View
                 return new PhpEngine();
             });
 
-            $viewFinder = new FileViewFinder($filesystem, [static::$folderPath]);
+            $viewFinder = new FileViewFinder($filesystem, [self::$folderPath]);
             $viewFactory = new Factory($viewResolver, $viewFinder, $eventDispatcher);
 
-            static::$engine = $viewFactory;
+            self::$engine = $viewFactory;
         }
 
-        return static::$engine;
+        return self::$engine;
     }
 }
