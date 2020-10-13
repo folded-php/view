@@ -16,7 +16,10 @@
         "folded/exception": "0.4.*"
     },
     "scripts": {
-        "test": "pest --coverage",
+        "test": [
+            "pest --coverage",
+            "phpstan analyse"
+        ],
         "lint": "php-cs-fixer fix --allow-risky=yes"
     },
     "autoload": {
@@ -29,5 +32,8 @@
             "src/setViewCacheFolderPath.php",
             "src/setViewFolderPath.php"
         ]
+    },
+    "require-dev": {
+        "phpstan/phpstan": "0.12.*"
     }
 }

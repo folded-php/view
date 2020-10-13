@@ -4,14 +4,17 @@ declare(strict_types = 1);
 
 namespace Folded;
 
+use Folded\Exceptions\NotAFolderException;
+use Folded\Exceptions\FolderNotFoundException;
+
 if (!function_exists("Folded\setViewCacheFolderPath")) {
     /**
      * Set the cached views folder path.
      *
      * @param string $path The path to the cached views folder.
      *
-     * @throws Folded\Exceptions\FolderNotFound If the folder path is not found.
-     * @throws Folded\Exceptions\NotAFolder     If the path is not a folder.
+     * @throws FolderNotFoundException If the folder path is not found.
+     * @throws NotAFolderException     If the path is not a folder.
      *
      * @since 0.1.0
      *

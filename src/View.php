@@ -47,8 +47,8 @@ final class View
     /**
      * Always pass the data provided to a specific view when it is rendered.
      *
-     * @param string $viewPath The path to the view (you can use dot syntax).
-     * @param array  $data     The data to pass to the view as key-value pairs.
+     * @param string              $viewPath The path to the view (you can use dot syntax).
+     * @param array<string,mixed> $data     The data to pass to the view as key-value pairs.
      *
      * @since 0.2.0
      *
@@ -100,8 +100,8 @@ final class View
     /**
      * Returns the compiled view as a string.
      *
-     * @param string $path The path to the view (can be expressed using dot syntax).
-     * @param array  $data An associative array of key and values to pass to the view.
+     * @param string              $path The path to the view (can be expressed using dot syntax).
+     * @param array<string,mixed> $data An associative array of key and values to pass to the view.
      *
      * @since 0.1.0
      *
@@ -120,8 +120,8 @@ final class View
      *
      * @param string $path The path to the cached views folder.
      *
-     * @throws Folded\Exceptions\FolderNotFound If the folder path is not found.
-     * @throws Folded\Exceptions\NotAFolder     If the path is not a folder.
+     * @throws FolderNotFoundException If the folder path is not found.
+     * @throws NotAFolderException     If the path is not a folder.
      *
      * @since 0.1.0
      *
@@ -140,8 +140,8 @@ final class View
      *
      * @param string $path The path to the folder containing the views.
      *
-     * @throws Folded\Exceptions\FolderNotFound If the folder path is not found.
-     * @throws Folded\Exceptions\NotAFolder     If the path is not a folder.
+     * @throws FolderNotFoundException If the folder path is not found.
+     * @throws NotAFolderException     If the path is not a folder.
      *
      * @since 0.1.0
      *
@@ -158,8 +158,8 @@ final class View
     /**
      * Throws exceptions if the folder is not correct.
      *
-     * @throws FolderNotFound If the folder is not found.
-     * @throws NotAFolder     If the path is not a folder.
+     * @throws FolderNotFoundException If the folder is not found.
+     * @throws NotAFolderException     If the path is not a folder.
      *
      * @since 0.1.0
      *
