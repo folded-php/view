@@ -77,6 +77,7 @@ Since this library relies on Laravel's [illuminate/view](https://github.com/illu
 - [2. Pass data to your view](#2-pass-data-to-your-view)
 - [3. Display a plain PHP view](#3-display-a-plain-php-view)
 - [4. Always pass certain data to a view](#4-always-pass-certain-data-to-a-view)
+- [5. Get the rendered view](#5-get-the-rendered-view)
 
 ### 1. Display a view
 
@@ -140,6 +141,16 @@ use function Folded\addDataToView;
 addDataToView("layouts.base", [
   "companyName" => "Folded",
 ]);
+```
+
+### 5. Get the rendered view
+
+In this example, we will get the rendered view in a variable (useful to send emails for example).
+
+```php
+use function Folded\getRenderedView;
+
+$content = getRenderedView("emails.account-created");
 ```
 
 ## Version support
