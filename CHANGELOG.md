@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- New function `getRenderedView()` to store the content of a view (useful to send emails from a blade file for example).
+
 ## [0.2.3] 2020-10-03
 
 ### Fixed
